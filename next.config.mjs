@@ -1,3 +1,4 @@
+// next.config.js
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
@@ -8,8 +9,9 @@ const nextConfig = {
         hostname: 'cdn.dummyjson.com',
       },
     ],
-    unoptimized:true
+    unoptimized: true,
   },
+  output: 'export', // ตั้งค่าการใช้งานเป็น Static HTML Export
 };
 
 export default nextConfig;
